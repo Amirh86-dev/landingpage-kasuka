@@ -1,5 +1,59 @@
+/* @font-face {
+  font-family: "IranyekanNormal";
+  src: url("../public/assets/fonts/iranyekan/Qs_Iranyekan.ttf");
+}
+@font-face {
+  font-family: "IranyekanBold";
+  src: url("../public/assets/fonts/iranyekan/Qs_Iranyekan bold.ttf");
+}
+@font-face {
+  font-family: "IranyekanMedium";
+  src: url("../public/assets/fonts/iranyekan/Qs_Iranyekan medium.ttf");
+}
+@font-face {
+  font-family: "IranyekanLight";
+  src: url("../public/assets/fonts/iranyekan/Qs_Iranyekan light.ttf");
+} */
+:root {
+  --color-oran: #ffc451;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media (width <= 40rem) {
+    .container {
+    max-width: 300px;
+  }
+}
+@media (width >= 40rem) {
+    .container {
+    max-width: 500px;
+  }
+}
+@media (width >= 48rem) {
+    .container {
+    max-width: 750px;
+  }
+}
+@media (width >= 64rem) {
+    .container {
+    max-width: 1000px;
+  }
+}
+@media (width >= 80rem) {  
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (width >= 96rem) {  }
