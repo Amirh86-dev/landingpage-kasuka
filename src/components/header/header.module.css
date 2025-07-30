@@ -12,7 +12,9 @@
   padding: 1rem 0;
 }
 .parent {
-  background: #000;
+  background: none;
+  position: fixed;
+  inset: auto 0;
 }
 .logoSec {
   display: flex;
@@ -24,20 +26,20 @@
   height: 40px;
 }
 .menu {
-  transition: all 250ms ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "IranyekanMedium";
   list-style: none;
+}
+.menu li a {
+  transition: all 250ms ease-in-out;
+  padding: 10px 30px;
   -webkit-transition: all 250ms ease-in-out;
   -moz-transition: all 250ms ease-in-out;
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
-}
-.menu li a{
-  padding: 10px 30px;
-  &:hover{
+  &:hover {
     color: var(--color-oran);
   }
 }
@@ -66,4 +68,89 @@
     background-color: var(--color-oran);
     color: #313131;
   }
+}
+.secHeader {
+  background-image: url("../../../public/assets/images/hero-bg.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.grayFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 10rem 0;
+}
+.headTitr {
+  font-family: "IranyekanBold";
+  font-size: 62px;
+  max-width: 900px;
+}
+.lessTitr {
+  font-family: "IranyekanLight";
+  font-size: 24px;
+  max-width: 900px;
+}
+.infoBox {
+  transition: all 250ms ease-in-out;
+  border: 1px solid #969696ad;
+  width: fit-content;
+  padding: 2rem 1.5rem;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  &:hover {
+    border-color: var(--color-oran);
+  }
+  &:hover .infodesc {
+    color: var(--color-oran);
+  }
+  &:hover .infoIcon {
+    color: var(--color-oran);
+  }
+}
+.infoIcon {
+  transition: all 250ms ease-in-out;
+  margin-bottom: 0.5rem;
+}
+.infodesc {
+  transition: all 250ms ease-in-out;
+  font-family: "IranyekanNormal";
+  font-size: 20px;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+}
+.infoBoxContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (width <= 40rem) {
+  .menu {
+    display: none;
+  }
+}
+@media (width >= 40rem) {
+}
+@media (width >= 48rem) {
+}
+@media (width >= 64rem) {
+}
+@media (width >= 80rem) {
+}
+@media (width >= 96rem) {
 }
