@@ -7,11 +7,11 @@ export default class InfoBoxContainer extends Component {
   render() {
     return (
       <div className={styled.infoBoxContainer}>
-        <InfoBox icon={<FiDatabase size={32} />} title="اطلاعات ذخیره شده" />
-        <InfoBox icon={<FiDatabase size={32} />} title="اطلاعات ذخیره شده" />
-        <InfoBox icon={<FiDatabase size={32} />} title="اطلاعات ذخیره شده" />
-        <InfoBox icon={<FiDatabase size={32} />} title="اطلاعات ذخیره شده" />
-        <InfoBox icon={<FiDatabase size={32} />} title="اطلاعات ذخیره شده" />
+        <InfoBox icon={<FiDatabase  />} title="اطلاعات ذخیره شده" />
+        <InfoBox icon={<FiDatabase  />} title="اطلاعات ذخیره شده" />
+        <InfoBox icon={<FiDatabase  />} title="اطلاعات ذخیره شده" />
+        <InfoBox icon={<FiDatabase  />} title="اطلاعات ذخیره شده" />
+        <InfoBox icon={<FiDatabase  />} title="اطلاعات ذخیره شده" />
       </div>
     );
   }

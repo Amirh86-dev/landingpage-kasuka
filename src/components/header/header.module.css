@@ -35,6 +35,7 @@
   align-items: center;
   justify-content: center;
   font-family: "IranyekanMedium";
+  font-size: 16px;
   list-style: none;
 }
 .menu li a {
@@ -84,6 +85,10 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .grayFilter {
   display: flex;
@@ -92,7 +97,7 @@
   flex-direction: column;
   color: white;
   text-align: center;
-  padding: 10rem 0;
+  padding-top: 10rem;
 }
 .headTitr {
   font-family: "IranyekanBold";
@@ -103,6 +108,7 @@
   font-family: "IranyekanLight";
   font-size: 24px;
   max-width: 900px;
+  margin: 1.5rem 0;
 }
 .infoBox {
   transition: all 250ms ease-in-out;
@@ -126,6 +132,7 @@
 .infoIcon {
   transition: all 250ms ease-in-out;
   margin-bottom: 0.5rem;
+  font-size: 32px;
 }
 .infodesc {
   transition: all 250ms ease-in-out;
@@ -144,18 +151,105 @@
   flex-wrap: wrap;
 }
 
-@media (width <= 40rem) {
+@media only screen and (max-width: 1200px) {
+  /* header */
+  .headTitr {
+    font-size: 42px;
+  }
+  .lessTitr {
+    font-size: 18px;
+  }
+  .infoBox {
+    padding: 1.5rem 1rem;
+  }
+  .infoIcon {
+    font-size: 28px;
+  }
+  .infodesc {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* navbar */
+  .menu {
+    font-size: 12px;
+  }
+  .menu li a {
+    padding: 5px 20px;
+  }
+  .menu li a:first-child {
+    padding: 5px 20px 5px 0;
+  }
+  .menu li a:last-child {
+    padding: 5px 0 5px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* navbar */
   .menu {
     display: none;
   }
+  /* header */
+  .headTitr {
+    font-size: 32px;
+  }
+  .lessTitr {
+    font-size: 14px;
+  }
+  .infoBox {
+    padding: 1rem 0.5rem;
+  }
+  .infoIcon {
+    font-size: 22px;
+  }
+  .infodesc {
+    font-size: 14px;
+  }
 }
-@media (width >= 40rem) {
+
+@media only screen and (max-width: 576px) {
+  /* navbar */
+  .menu {
+    display: none;
+  }
+  /* header */
+  .headTitr {
+    font-size: 22px;
+  }
+  .lessTitr {
+    font-size: 14px;
+  }
+  .infoBox {
+    padding: 1rem 1rem;
+  }
+  .infoIcon {
+    font-size: 16px;
+  }
+  .infodesc {
+    font-size: 10px;
+  }
 }
-@media (width >= 48rem) {
-}
-@media (width >= 64rem) {
-}
-@media (width >= 80rem) {
-}
-@media (width >= 96rem) {
+@media only screen and (max-width: 380px) {
+  /* navbar */
+  .menu {
+    display: none;
+  }
+  /* header */
+  .headTitr {
+    font-size: 20px;
+  }
+  .lessTitr {
+    font-size: 12px;
+  }
+  .infoBox {
+    padding: 1rem 0.5rem;
+  }
+  .infoIcon {
+    font-size: 18px;
+  }
+  .infodesc {
+    font-size: 10px;
+  }
 }

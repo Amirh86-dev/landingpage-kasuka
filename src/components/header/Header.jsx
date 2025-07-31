@@ -7,7 +7,7 @@ export default class Header extends Component {
     return (
       <header>
         <section className={styled.secHeader}>
-          <div className={styled.grayFilter}>
+          <div className={styled.grayFilter  + " container"}>
               <h1 className={styled.headTitr}>
                 <span>راه حل های قدرتمند دیجیتال با</span>
                 <br />
