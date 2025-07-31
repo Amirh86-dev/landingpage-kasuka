@@ -12,9 +12,14 @@
   padding: 1rem 0;
 }
 .parent {
+  transition: all 250ms ease-in-out;
   background: none;
   position: fixed;
   inset: auto 0;
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
 }
 .logoSec {
   display: flex;
