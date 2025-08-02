@@ -4,8 +4,6 @@ import styled from "./header.module.css";
 export default class InfoBox extends Component {
   render() {
     let props = this.props;
-
-    console.log(props);
     
     return (
       <div className={styled.infoBox}>

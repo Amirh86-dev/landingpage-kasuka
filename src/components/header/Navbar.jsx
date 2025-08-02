@@ -15,9 +15,8 @@ export default class Navbar extends Component {
   };
 
   render() {
-    console.log(window.scrollY);
-
     window.addEventListener("scroll", this.scrollHandler);
+
     return (
       <div
         className={styled.parent}
