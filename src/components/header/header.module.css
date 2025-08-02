@@ -97,7 +97,7 @@
   flex-direction: column;
   color: white;
   text-align: center;
-  padding-top: 10rem;
+  padding: 10rem 0 2rem 0;
 }
 .headTitr {
   font-family: "IranyekanBold";
