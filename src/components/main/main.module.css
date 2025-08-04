@@ -26,9 +26,9 @@
   font-size: 16px;
   font-family: "IranyekanMedium";
   max-width: 600px;
+  line-height: 24px;
 }
 .Benefitsbox {
-  max-width: 500px;
   padding: 1rem 0.25rem;
 }
 .benefitDesc {
@@ -42,8 +42,7 @@
   font-size: 22px;
   color: var(--color-oran);
 }
-
-.customSwiper {
+/* .customSwiper {
   width: 100%;
 }
 
@@ -61,13 +60,13 @@
 }
 .customSwiper div:last-child {
   margin-left: 0px;
+} */
+.customSwiper div {
+  display: flex;
+  align-items: center;
 }
-.slide {
-  width: 120px !important;
-  height: auto;
-}
-.slide img {
-  width: 100%;
+.imgSlide {
+  max-width: 150px;
   height: 100%;
   transition: all 250ms ease-in-out;
   filter: grayscale(100);
@@ -82,4 +81,77 @@
     opacity: 1;
     -webkit-filter: none;
   }
+}
+
+@media only screen and (max-width: 1400px) {
+  .imgSlide {
+    max-width: 150px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .imgSlide {
+    max-width: 130px;
+  }
+}
+@media only screen and (max-width: 1119px) {
+  .imgSlide {
+    max-width: 116px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .imgSlide {
+    max-width: 110px;
+  }
+  .sectionIntroduction {
+    justify-content: center;
+    align-items: center;
+  }
+  .introductionTextBox {
+    flex-basis: auto;
+    padding-left: 0;
+  }
+  .introductionTextBoxdesc {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .introductionImgBox {
+    flex-basis: auto;
+    max-width: 800px;
+    min-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .imgSlide {
+    max-width: 110px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .imgSlide {
+    max-width: 90px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .introductionTextBoxTitle {
+    font-size: 22px;
+    font-family: "IranyekanBold";
+    margin-top: 1rem;
+  }
+  .introductionTextBoxdesc {
+    font-size: 12px;
+  }
+  .benefitDesc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .benefitDescIcon {
+    font-size: 16px;
+    color: var(--color-oran);
+  }
+  .introductionImgBox {
+    padding: 0 2rem;
+    flex-basis: auto;
+  }
+}
+@media only screen and (max-width: 380px) {
 }

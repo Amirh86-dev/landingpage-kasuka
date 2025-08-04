@@ -6,10 +6,6 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 
 export default class Slider extends Component {
-  state = {
-    activeIndex: 0,
-  };
-
   render() {
     const imagesPath = [];
 
@@ -17,26 +13,38 @@ export default class Slider extends Component {
       imagesPath[index] = `assets/images/client-${index + 1}.png`;
     }
 
+    console.log(window.innerWidth <= 1400 ? 200 : 0);
+
     return (
-      <div>
-        <div className="swiperWrapper">
-          <Swiper
-            modules={[Autoplay]}
-            slidesPerView={6}
-            loop
-            autoplay={{ delay: 1500 }}
-            onSlideChange={swiper=> this.setState({activeIndex: swiper.realIndex})}
-            className={styled.customSwiper}
-          >
-            {imagesPath.map((imgP, i) => (
-              <SwiperSlide key={i}>
-                <div className={styled.slide}>
-                  <img src={imgP} alt="img" />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+      <div className="swiperWrapper">
+        <Swiper
+          modules={[Autoplay]}
+          slidesPerView={
+            window.innerWidth <= 1023 ? (window.innerWidth <= 639 ? 2 : 4) : 6
+          }
+          loop
+          autoplay={{ delay: 1500 }}
+          className={styled.customSwiper}
+          spaceBetween={
+            window.innerWidth > 1400 || window.innerWidth <= 1023
+              ? window.innerWidth <= 767
+                ? window.innerWidth <= 639
+                  ? 120
+                  : 40
+                : 100
+              : window.innerWidth <= 1400
+              ? 60
+              : 0
+          }
+          loopAdditionalSlides={0}
+          dir="rtl"
+        >
+          {imagesPath.map((imgP, i) => (
+            <SwiperSlide key={i}>
+              <img className={styled.imgSlide} src={imgP} alt="img" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     );
   }
