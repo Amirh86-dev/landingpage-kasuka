@@ -25,6 +25,7 @@ export default class Slider extends Component {
             slidesPerView={6}
             loop
             autoplay={{ delay: 1500 }}
+            onSlideChange={swiper=> this.setState({activeIndex: swiper.realIndex})}
             className={styled.customSwiper}
           >
             {imagesPath.map((imgP, i) => (
