@@ -6,7 +6,7 @@ export default class Benefits extends Component {
   render() {
     return (
         <div className={styled.benefitDesc}>
-            <span className={styled.benefitDescIcon}><IoCheckmarkDone size={20} /></span>
+            <span className={styled.benefitDescIcon}><IoCheckmarkDone /></span>
             <span>{this.props.text}</span>
         </div>
     )
