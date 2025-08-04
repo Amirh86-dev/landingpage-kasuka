@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "../main.module.css";
 import Benefits from "./Benefits";
+import Slider from "./Slider";
 
 export default class AboutUs extends Component {
   render() {
@@ -49,6 +50,9 @@ export default class AboutUs extends Component {
                 </p>
               </div>
             </div>
+          </div>
+          <div style={{width: "100%"}}>
+            <Slider />
           </div>
         </div>
       </div>
